@@ -1,5 +1,5 @@
 public class Wizard extends Character {
-    
+    //character
     public Wizard(){
         super("Wizard", 2000, 120);
 

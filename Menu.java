@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Menu {
+    //display menu
     public void displayMenu(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("1: Start Game");

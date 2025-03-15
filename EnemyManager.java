@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class EnemyManager {
     private ArrayList<Enemy> enemies;
 
+    // set the enemies ina a list
     public EnemyManager(){
         enemies = new ArrayList<>();
 

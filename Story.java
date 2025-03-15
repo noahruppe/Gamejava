@@ -8,7 +8,7 @@ public class Story {
     private Character character;
     private String wifeLocation;  
     private List<String> locations; 
-
+    // have the land in a list
     public Story(Character character) {
         this.character = character;
         
@@ -23,7 +23,7 @@ public class Story {
         int randomIndex = random.nextInt(locations.size());
         wifeLocation = locations.get(randomIndex);
     }
-
+    //start the game menu
     public void startMenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Okay " + character.name + ", it is time to start your journey.");
@@ -78,7 +78,7 @@ public class Story {
         scanner.close();
     }
 
-    
+    // if you found wife or not 
     private boolean goThroughPath(String location) {
         Scanner scanner = new Scanner(System.in);
 

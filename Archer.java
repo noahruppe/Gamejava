@@ -1,5 +1,5 @@
 public class Archer extends Character {
-    
+    // keep track of archer characteristics
     public Archer(){
         super("Archer", 1000, 55);
 

@@ -8,7 +8,7 @@ public abstract class Character{
     private Weapon weapon;
      
 
-
+    //take all of the characters characteristics and store them in a constructor
     public Character(String name, int health, int attackPower ){
         this.name = name;
         this.health = health;
@@ -16,16 +16,16 @@ public abstract class Character{
         this.weapons = new ArrayList<>();
         
     }
-
+    // display all the info for a character
     public abstract void displayCharacterinfo();
-
+    // adds the weapons attack power to the character
     public void addWeapon(Weapon weapon){
         this.weapons.add(weapon);
         attackPower += weapon.getAttackPower();
         adJustStatesForWeapon(weapon);
         displayWeapons();
     }
-
+         // this makes it so that only certain characters can have certain weapons
     public void adJustStatesForWeapon(Weapon weapon){
         if(this instanceof Warrior && weapon.getName().equals("Fire Power")){
             attackPower -= 20;
@@ -184,20 +184,23 @@ public abstract class Character{
     //     System.out.println("Total Attack Power: " + totalAttackPower);  // Display the combined attack power
     // }
 
+    // fetch attack power
     public int getAttackPower() {
         return attackPower;
     }
-
+    //fetch the name
     public String getName(){
         return name;
     }
+    //fetch the health
     public int getHealth(){
         return health;
     }
+    //fetch the weapon
     public Weapon getWeapon(){
         return weapon;
     }
-
+     //set health make sure character is not dead
     public void setHealth(int health) {
         this.health = Math.max(health, 0);  // Ensures health doesn't go below 0
     }
@@ -206,15 +209,15 @@ public abstract class Character{
     //     this.weapon = weapon;
     //     this.attackPower += weapon.getAttackPower(); // Adjust the attack power based on the weapon's attack power
     // }
-
+        // how character chooses weapon
     public void chooseWeapon(Weapon weapon) {
         this.weapons.add(weapon);  // Add the weapon to the player's list
     }
-    
+    // update the attack power if you need to have two weapons
     public void updateAttackPower(Weapon weapon) {
         this.attackPower += weapon.getAttackPower();  // Update the total attack power
     }
-    
+    // display all the weapons that you have
     public void displayWeapons() {
         System.out.println("Weapons:");
         for (Weapon weapon : weapons) {

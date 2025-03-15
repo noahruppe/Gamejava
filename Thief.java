@@ -1,5 +1,5 @@
 public class Thief extends Character {
-    
+    //character 
     public Thief(){
         super("Thief", 700, 40);
 

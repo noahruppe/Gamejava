@@ -10,7 +10,7 @@ public class Enemy {
         setAttackPower();
 
     }
-
+    // set health
     public void enemyhealth(){
         switch(this.name){
             case "Goblin":
@@ -54,7 +54,7 @@ public class Enemy {
             break;
         }
     }
-
+    //set attack power
     public void setAttackPower(){
         switch(this.name){
             case "Goblin":

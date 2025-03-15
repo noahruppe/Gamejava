@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//start the game
 public class Startgame {
     public void start(){
         Scanner scanner = new Scanner(System.in);

@@ -1,7 +1,7 @@
 
 
 public class Warrior extends Character {
-    
+    //character
     public Warrior(){
         super("Warrior", 1500, 70);
 
